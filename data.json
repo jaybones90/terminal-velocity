@@ -1,0 +1,27 @@
+{
+  "teamMembers": [{
+    "name": "Jason Ainsworth",
+    "age": 27,
+    "sex": "Male",
+    "height": "5'11",
+    "weight": 165,
+    "nickName": "Jaybones",
+    "hometown": "San Diego, CA",
+    "jumps": 33,
+    "sponsers": "RedBull (I wish :)",
+    "bio": "I did my first skydive when I turned 21 back in 2011 and immediatelly fell in love with the sport. I got solo certified in the summer of 2015 but haven't been able to jump since due to financial reasons. I'm currently learning computer programming so that I can have a career that gives me the fiancial freedom to skydive around the world"
+  },
+  {
+    "name": "Levon Suits",
+    "age": 29,
+    "sex": "Male",
+    "height": "5'11",
+    "weight": 225,
+    "nickName": "LeeLou Dallas",
+    "hometown": "Jupiter, FL",
+    "jumps": 12,
+    "sponsers": "None",
+    "bio": "Recently did first skydive and is passionality pursuring a career in the sport"
+  }
+  ]
+}
