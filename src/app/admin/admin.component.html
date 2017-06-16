@@ -1,7 +1,9 @@
+<h1>Admin</h1>
 
-<button class="btn" (click)="showForm()">Create A New Team Member</button>
 
-<div *ngIf="showNewMemberForm">
+<button class="btn" (click)="showNewMemberForm()">Create A New Team Member</button>
+
+<div *ngIf="newMemberForm">
   <h1>Enter A New Team Member</h1>
   <div class="wrapper">
     <div class="form-group">
@@ -38,6 +40,7 @@
       <textarea cols="60" rows="8" #bio placeholder="Bio" class="form-control"></textarea>
     </div>
     <button class="btn" (click)="submitForm(name.value, nickName.value, homeTown.value, age.value, sex.value, weight.value, height.value, jumps.value, sponser.value, image.value, bio.value); name.value=''; nickName.value=''; homeTown.value=''; age.value=''; sex.value=''; weight.value=''; height.value=''; jumps.value=''; sponser.value=''; image.value=''; bio.value='' ">Submit</button>
+    <button (click)="hideNewMemberForm()">Cancel</button>
   </div>
 </div>
 
@@ -45,4 +48,5 @@
 
 <div class="wrapper" *ngIf="editOptions">
   <app-team-members></app-team-members>
+  <button (click)="hideEditOptions()">Cancel</button>
 </div>

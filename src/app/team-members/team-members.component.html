@@ -1,4 +1,11 @@
+<h3>Filter Team Members</h3>
+<select (change)="onChange($event.target.value)">
+  <option value="any">All Team Members</option>
+  <option  value="{{member.sponser}}">{{member.sponser}}</option>
+</select>
+
 <h1 class="profile-header">Team Members</h1>
+
 
 <div *ngFor="let member of teamMembers" class="panel panel-default">
   <div class="panel-body">

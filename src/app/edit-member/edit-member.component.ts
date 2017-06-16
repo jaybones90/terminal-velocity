@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-edit-member',
@@ -10,13 +11,21 @@ export class EditMemberComponent implements OnInit {
   editForm = null;
 
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
   }
 
   showEditForm() {
     this.editForm = true;
+  }
+
+  beginUpdatingMember(memberToUpdate) {
+    this.dataService.updateMember(memberToUpdate);
+  }
+
+  beginDeletingMember(memberToDelete) { 
+    this.dataService.deleteMember(memberToDelete);
   }
 
 

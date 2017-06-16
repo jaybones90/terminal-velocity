@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { NewMemberComponent } from './new-member/new-member.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
+import { SponserFilterPipe } from './sponser-filter.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     AboutComponent,
     NewMemberComponent,
     AdminComponent,
-    EditMemberComponent
+    EditMemberComponent,
+    SponserFilterPipe
   ],
   imports: [
     BrowserModule,

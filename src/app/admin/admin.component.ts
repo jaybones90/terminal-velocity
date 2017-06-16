@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   providers: [DataService]
 })
 export class AdminComponent implements OnInit {
-  showNewMemberForm = null;
+  newMemberForm = null;
   editOptions = null;
 
   constructor(private dataService: DataService, private router: Router) { }
@@ -21,12 +21,20 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  showForm() {
-    this.showNewMemberForm = true;
+  showNewMemberForm() {
+    this.newMemberForm = true;
+  }
+
+  hideNewMemberForm() {
+    this.newMemberForm = null;
   }
 
   showEditOptions() {
     this.editOptions = true;
+  }
+
+  hideEditOptions() {
+    this.editOptions = null;
   }
 
   submitForm(name, nickname, age, sex, height, weight, homeTown, jumps, sponsers, bio, image) {
