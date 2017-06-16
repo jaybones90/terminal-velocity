@@ -1,0 +1,13 @@
+.profile-header {
+  margin-top: -80px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.medium-img {
+  height: 300px;
+  width: 300px;
+  float: right;
+  margin-top: -65px;
+  border-radius: 30px;
+}
