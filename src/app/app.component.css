@@ -1,0 +1,21 @@
+.center-text {
+  text-align: center;
+}
+
+.headline {
+  font-size: 75px;
+  color: white;
+}
+
+.bg-img {
+  background-image: url(/assets/img/bg-img2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
