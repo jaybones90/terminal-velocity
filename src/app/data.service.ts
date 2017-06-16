@@ -18,5 +18,9 @@ export class DataService {
      return this.database.object('teamMembers/' + memberId);
    }
 
+   addNewMember(newMember) {
+     this.teamMembers.push(newMember);
+   }
+
 
 }

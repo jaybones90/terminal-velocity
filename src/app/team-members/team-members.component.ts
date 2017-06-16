@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class TeamMembersComponent implements OnInit {
   teamMembers: TeamMember[];
+  currentRoute: string = this.router.url;
 
   constructor(private dataService: DataService, private router: Router) { }
 

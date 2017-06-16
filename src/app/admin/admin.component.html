@@ -1,0 +1,48 @@
+
+<button class="btn" (click)="showForm()">Create A New Team Member</button>
+
+<div *ngIf="showNewMemberForm">
+  <h1>Enter A New Team Member</h1>
+  <div class="wrapper">
+    <div class="form-group">
+      <input #name placeholder="Name" class="form-control">
+    </div>
+    <div class="form-group">
+      <input #nickName placeholder="Nick Name" class="form-control">
+    </div>
+    <div class="form-group">
+      <input #homeTown placeholder="Hometown" class="form-control">
+    </div>
+    <div class="form-group">
+      <input #age placeholder="Age" class="form-control" type="number">
+    </div>
+    <div class="form-group">
+      <input #sex placeholder="Sex" class="form-control">
+    </div>
+    <div class="form-group">
+      <input #weight placeholder="Weight" class="form-control" type="number">
+    </div>
+    <div class="form-group">
+      <input #height placeholder="Height" class="form-control">
+    </div>
+    <div class="form-group">
+      <input #jumps placeholder="Current Number of Jumps" class="form-control" type="number">
+    </div>
+    <div class="form-group">
+      <input #sponser placeholder="Current Sponser" class="form-control">
+    </div>
+    <div class="form-group">
+      <input #image placeholder="Image URL" class="form-control">
+    </div>
+    <div class="form-group">
+      <textarea cols="60" rows="8" #bio placeholder="Bio" class="form-control"></textarea>
+    </div>
+    <button class="btn" (click)="submitForm(name.value, nickName.value, homeTown.value, age.value, sex.value, weight.value, height.value, jumps.value, sponser.value, image.value, bio.value); name.value=''; nickName.value=''; homeTown.value=''; age.value=''; sex.value=''; weight.value=''; height.value=''; jumps.value=''; sponser.value=''; image.value=''; bio.value='' ">Submit</button>
+  </div>
+</div>
+
+<button class="btn" (click)="showEditOptions()">Edit A Current Team Member</button>
+
+<div class="wrapper" *ngIf="editOptions">
+  <app-team-members></app-team-members>
+</div>

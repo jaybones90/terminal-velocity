@@ -1,8 +1,12 @@
-<nav class="navbar">
+<nav class="navbar .navbar-toggleable-*">
   <nav class="navbar  navbar-inverse bg-primary">
+    <nav class="navbar-brand">
+      <img id="logo" src="/assets/img/hang-loose.png" routerLink="">
+    </nav>
+    <nav>
       <p class="navbar-brand" routerLink="">Home</p>
       <p class="navbar-brand" routerLink="team-members">Team Members</p>
-      <img id="logo" src="/assets/img/hang-loose.png" routerLink="">
+      <p class="navbar-brand" routerLink="about">About</p>
     </nav>
 </nav>
 
@@ -13,3 +17,7 @@
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+
+<footer class="footer">
+    <a class="text-muted" routerLink="admin">Admin</a>
+</footer>
