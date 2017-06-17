@@ -4,6 +4,7 @@ import { DataService } from '../data.service';
 import { TeamMember } from '../team-member.model';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-team-members',
   templateUrl: './team-members.component.html',
@@ -13,16 +14,32 @@ import { Router } from '@angular/router';
 export class TeamMembersComponent implements OnInit {
   teamMembers: TeamMember[];
   currentRoute: string = this.router.url;
+  uniqueSponsers: string[] = [];
+  desiredFilter: string = 'all';
 
   constructor(private dataService: DataService, private router: Router) { }
 
   ngOnInit() {
-   this.dataService.getTeamMembers().subscribe(dataLastEmittedFromObserver => { this.teamMembers = dataLastEmittedFromObserver;})
+   this.dataService.getTeamMembers().subscribe(dataLastEmittedFromObserver => { this.teamMembers = dataLastEmittedFromObserver;
+   this.teamMembers.forEach((member) => {
+      if (this.uniqueSponsers.includes(member.sponsers)) {
+      } else {
+        this.uniqueSponsers.push(member.sponsers);
+        }
+      });
+    });
   }
+
 
   goToProfilePage(member) {
     this.router.navigate(['profile', member.$key])
   }
+
+  onChange(filter) {
+    this.desiredFilter = filter;
+  }
+
+
 
 
 
