@@ -1,13 +1,13 @@
 <h3>Filter Team Members</h3>
 <select (change)="onChange($event.target.value)">
   <option value="all">All Team Members</option>
-  <option *ngFor="let sponser of uniqueSponsers" value="{{sponser}}">{{sponser}}</option>
+  <option *ngFor="let sponsor of uniquesponsors" value="{{sponsor}}">{{sponsor}}</option>
 </select>
 
 <h1 class="profile-header">Team Members</h1>
 
 
-<div *ngFor="let member of teamMembers | sponserFilter:desiredFilter" class="panel panel-default">
+<div *ngFor="let member of teamMembers | sponsorFilter:desiredFilter" class="panel panel-default">
   <div class="panel-body">
     <div (click)="goToProfilePage(member)">
       <h3>{{member.name}}</h3>

@@ -2,10 +2,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { TeamMember } from './team-member.model';
 
 @Pipe({
-  name: 'sponserFilter',
+  name: 'sponsorFilter',
   pure: false
 })
-export class SponserFilterPipe implements PipeTransform {
+export class sponsorFilterPipe implements PipeTransform {
 
   transform(teamMembers: TeamMember[], desiredFilter?: string) {
     let output: TeamMember[] = [];
@@ -13,7 +13,7 @@ export class SponserFilterPipe implements PipeTransform {
       return teamMembers;
     } else {
       teamMembers.forEach((member) => {
-        if (member.sponsers === desiredFilter) {
+        if (member.sponsors === desiredFilter) {
           output.push(member)
         }
       });

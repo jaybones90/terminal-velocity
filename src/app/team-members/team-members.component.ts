@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class TeamMembersComponent implements OnInit {
   teamMembers: TeamMember[];
   currentRoute: string = this.router.url;
-  uniqueSponsers: string[] = [];
+  uniquesponsors: string[] = [];
   desiredFilter: string = 'all';
 
   constructor(private dataService: DataService, private router: Router) { }
@@ -22,9 +22,9 @@ export class TeamMembersComponent implements OnInit {
   ngOnInit() {
    this.dataService.getTeamMembers().subscribe(dataLastEmittedFromObserver => { this.teamMembers = dataLastEmittedFromObserver;
    this.teamMembers.forEach((member) => {
-      if (this.uniqueSponsers.includes(member.sponsers)) {
+      if (this.uniquesponsors.includes(member.sponsors)) {
       } else {
-        this.uniqueSponsers.push(member.sponsers);
+        this.uniquesponsors.push(member.sponsors);
         }
       });
     });

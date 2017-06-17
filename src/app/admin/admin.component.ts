@@ -37,8 +37,8 @@ export class AdminComponent implements OnInit {
     this.editOptions = null;
   }
 
-  submitForm(name, nickname, age, sex, height, weight, hometown, jumps, sponsers, bio, image) {
-    const newMember = new TeamMember(name,nickname, age, sex, height, weight, hometown, jumps, sponsers, bio, image)
+  submitForm(name, nickname, age, sex, height, weight, hometown, jumps, sponsors, bio, image) {
+    const newMember = new TeamMember(name,nickname, age, sex, height, weight, hometown, jumps, sponsors, bio, image)
     this.dataService.addNewMember(newMember);
     this.router.navigate(['']);
   }

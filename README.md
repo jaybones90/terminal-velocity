@@ -1,28 +1,38 @@
 # TerminalVelocity
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
+This is website for the fictional skydiving team called Terminal Velocity. The site keeps track of all the team members and displays a profile page for each member with their stats. It has an admin section for the site administrator that implements full CRUD ability. Users have the ability to filter members based on their sponsor.
+
+## Future Updates
+* Section for announcements
+* Message board for members
+* Blog
+
+## Prerequisites
+* [Git](https://git-scm.com/)
+* [Angular CLI](https://angularjs.org/)
+* [Bower](https://bower.io/)
+* [NPM](https://www.npmjs.com/)
+* [Firebase](https://firebase.google.com/)
+* You'll need to signup for a free account with firebase and create a file in the top level of the project directory called 'api-keys.ts'. Once you are logged in, hit the button that says 'get started' and then 'add project'. Then click 'add firebase to your web app'. Copy 'var config' and everything inside it and paste that inside your newly created api-keys.ts file. Rename 'config' to 'masterFirebaseConfig'. Make sure to include your api-keys.ts file in the .gitignore file so you api key does not become public.
+
+## Installation
+* run the following commands in the terminal
+* `git clone https://github.com/jaybones90/terminal-velocity.git`
+* `cd terminal-velocity`
+* `npm install`
+* `bower install`
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Known Bugs
+There are no known bugs at this time. Please feel free to send me an email or comment on my github if you come across any bugs.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Contact Info
+* Jason Ainsworth
+* Email: jasoncruze@gmail.com
+* Github: https://github.com/jaybones90
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+MIT © Jason Ainsworth 2017

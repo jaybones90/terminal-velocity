@@ -24,7 +24,7 @@ export class DataService {
 
    updateMember(memberToUpdate) {
      let memberFromFirebase = this.getMemberById(memberToUpdate.$key);
-     memberFromFirebase.update({name: memberToUpdate.name, nickName: memberToUpdate.nickName, age: memberToUpdate.age, sex: memberToUpdate.sex, height: memberToUpdate.height, weight: memberToUpdate.weight, hometown: memberToUpdate.hometown, jumps: memberToUpdate.jumps, sponsers: memberToUpdate.sponsers, bio: memberToUpdate.bio, image: memberToUpdate.image
+     memberFromFirebase.update({name: memberToUpdate.name, nickName: memberToUpdate.nickName, age: memberToUpdate.age, sex: memberToUpdate.sex, height: memberToUpdate.height, weight: memberToUpdate.weight, hometown: memberToUpdate.hometown, jumps: memberToUpdate.jumps, sponsors: memberToUpdate.sponsors, bio: memberToUpdate.bio, image: memberToUpdate.image
      });
    }
 
