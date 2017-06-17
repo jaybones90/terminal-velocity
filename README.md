@@ -37,5 +37,5 @@ There are no known bugs at this time. Please feel free to send me an email or co
 ## License
 MIT © Jason Ainsworth 2017
 
-![Screenshot 1](/assets/img/screen-shot1.png)
-![Screenshot 2](/assets/img/screen-shot2.png)
+![Screenshot 1](src/assets/img/screen-shot1.png)
+![Screenshot 2](src/assets/img/screen-shot2.png)
