@@ -1,4 +1,4 @@
-# TerminalVelocity
+# Terminal Velocity
 
 This is website for the fictional skydiving team called Terminal Velocity. The site keeps track of all the team members and displays a profile page for each member with their stats. It has an admin section for the site administrator that implements full CRUD ability. Users have the ability to filter members based on their sponsor.
 
@@ -36,3 +36,6 @@ There are no known bugs at this time. Please feel free to send me an email or co
 
 ## License
 MIT © Jason Ainsworth 2017
+
+![Screenshot 1](/assets/img/screen-shot1.png)
+![Screenshot 2](/assets/img/screen-shot2.png)
